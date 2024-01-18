@@ -1,5 +1,5 @@
 const mongoose =require("mongoose");
-const listSchema = new mongoose({
+const listSchema = new mongoose.Schema({
     title:{
         type: String,
         require: true,
@@ -15,4 +15,4 @@ const listSchema = new mongoose({
 ],
 });
 
-module.exports= mongoose.model("List",ListSchema);
+module.exports= mongoose.model("List",listSchema);
