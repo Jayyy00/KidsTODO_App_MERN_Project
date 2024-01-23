@@ -59,8 +59,28 @@ router.delete("/deleteTask/:id",async(req,res) => {
       }
    });
 
-   //get task
+   
+  // Get task
+router.get("/getTasks/:id", async (req, res) => {
+      try {
+          const lists = await List.find({ user: req.params.id }).exec();
+          res.status(200).json({ lists });
+      } catch (error) {
+          console.log(error);
+          res.status(500).json({ error: "Internal Server Error" });
+      }
+  });
+   
+  //all task
+  router.get("/getAllTasks", async (req, res) => {
+      try {
+          const allLists = await List.find().exec();
+          res.status(200).json({ lists: allLists });
+      } catch (error) {
+          console.log(error);
+          res.status(500).json({ error: "Internal Server Error" });
+      }
+  });
   
-    
 
 module.exports= router;
