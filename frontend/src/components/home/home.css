@@ -1,0 +1,24 @@
+.home{
+    width: 100%;
+    height:100vh; 
+   
+}
+
+.homeback-jpg{
+   float: right; 
+   width: 60%;
+   margin-top: -20%;
+}
+
+.home h1{
+    font-size: 60px;
+    margin-top: 12%;
+}
+
+.home-btn{
+    background-color:#218B82;
+    border-radius:5px ;
+    color: white!important;
+    font-weight: bold;
+    
+}
