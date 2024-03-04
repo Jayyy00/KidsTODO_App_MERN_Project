@@ -1,5 +1,6 @@
 import React from 'react';
-import "./signup.css"
+import "./signup.css";
+import HeadingComp from './HeadingComp';
 const Signup = () => {
   return (
     <div className="signup">
@@ -32,7 +33,7 @@ const Signup = () => {
                 
                 </div></div>
                 <div className="col-lg-4 column col-left d-flex justify-content-center align-items-center ">
-                    <h1 className="text-center sign-up-heading">Sign<br/>Up</h1>
+                   <HeadingComp first="Sing" second="Up"/>
                 </div>
             </div>
         </div>
