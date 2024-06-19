@@ -1,13 +1,21 @@
 .home{
     width: 100%;
     height:100vh; 
+    
+   background-image: url("https://static.vecteezy.com/system/resources/thumbnails/009/880/435/small_2x/spring-green-fields-landscape-with-blue-sky-and-clouds-background-panorama-peaceful-rural-nature-in-springtime-with-grass-land-in-morning-cartoon-for-spring-and-summer-banner-vector.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   display: flex;
    
 }
 
 .homeback-jpg{
    float: right; 
-   width: 60%;
-   margin-top: -20%;
+   width: 55%;
+   margin-top: -12%;
+   display: flex;
+   
 }
 
 .home h1{
@@ -17,8 +25,11 @@
 
 .home-btn{
     background-color:#218B82;
-    border-radius:5px ;
+    border-radius:10px ;
     color: white!important;
-    font-weight: bold;
-    
+    font-weight: bold;    
 }
+
+
+
+
