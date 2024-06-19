@@ -10,16 +10,16 @@ const TodoCards = ({title,body}) =>{
                        {body.split("",77)}...
                   </p>
         </div> 
-           <div className="d-flex justify-content-around">
-             <div>
-                <GrDocumentUpdate className="card-icons"/>
+           <div className="d-flex justify-content-around ">
+             <div className="d-flex justify-content-center align-items-center card-icon-head px-1 py -1">
+                <GrDocumentUpdate className="card-icons"/> Update
              </div>
-                <div>
-                    <AiFillDelete className="card-icons"/>
+                <div className="d-flex justify-content-center align-items-center card-icon-head px-1 py -1 text-danger">
+                    <AiFillDelete className="card-icons del"/> Delete
                 </div> 
            </div> 
     </div>
-  )
-}
+  );
+};
 
 export default TodoCards;

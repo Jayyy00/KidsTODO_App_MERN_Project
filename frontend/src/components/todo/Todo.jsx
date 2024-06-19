@@ -48,7 +48,7 @@ const Todo = () => {
           <div className="row " >
           {Array && 
           Array.map((item, index )=>(
-            <div className="col-lg-3 mx-5 my-2">
+            <div className="col-lg-3 col-10 mx-5 my-2">
               <TodoCards title={item.title} body={item.body}/>
        
             </div>
