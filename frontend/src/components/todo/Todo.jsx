@@ -16,6 +16,10 @@ const Todo = () => {
     console.log(Inputs);
     setInputs({title:"",body:""})
   };
+  const del = (id)=>{
+       Array.splice(id,"1")
+       setArray([...Array]);//DELETE EACH ITEAM ONE BY ONE USING IT'S ID
+  };
 
   return (
     <div className='todo'>
@@ -48,8 +52,8 @@ const Todo = () => {
           <div className="row " >
           {Array && 
           Array.map((item, index )=>(
-            <div className="col-lg-3 col-10 mx-5 my-2">
-              <TodoCards title={item.title} body={item.body}/>
+            <div className= "col-lg-3 col-10 mx-5 my-2 " key={index}>
+              <TodoCards title={item.title} body={item.body} id={index} delid={del } />
        
             </div>
             ))}

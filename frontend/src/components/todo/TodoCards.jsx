@@ -1,7 +1,7 @@
 import React from 'react'
 import { AiFillDelete } from "react-icons/ai";
 import { GrDocumentUpdate } from "react-icons/gr";
-const TodoCards = ({title,body}) =>{
+const TodoCards = ({title,body, id, delid }) =>{
   return (
     <div className = "p-3 todo-card">
        <div>
@@ -14,7 +14,11 @@ const TodoCards = ({title,body}) =>{
              <div className="d-flex justify-content-center align-items-center card-icon-head px-1 py -1">
                 <GrDocumentUpdate className="card-icons"/> Update
              </div>
-                <div className="d-flex justify-content-center align-items-center card-icon-head px-1 py -1 text-danger">
+                <div className="d-flex justify-content-center align-items-center card-icon-head px-1 py -1 text-danger" onClick={()=>{
+                   delid(id);
+                  }}
+                  >
+               
                     <AiFillDelete className="card-icons del"/> Delete
                 </div> 
            </div> 
